@@ -1,0 +1,17 @@
+<%- include("header") -%>
+
+
+
+<% for (var i = 0; i < BlogList.length; i++) { %>
+  <h1> <%= BlogList[i].title %></h1>
+  <p><%= BlogList[i].post.substring(0,100) +"..."  %> <a  href="/posts/<%= BlogList[i].title %>">Read More</a></p>
+<% } %>
+
+
+
+
+
+
+
+
+<%- include("footer") -%>
